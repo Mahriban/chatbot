@@ -1,0 +1,277 @@
+
+/* iconicstroke */
+  [class*="iconicstroke-"]:before {
+    font-family: 'IconicStroke', sans-serif;
+}
+/* typicons */
+  [class*="typicons-"]:before {
+    font-family: 'Typicons', sans-serif;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background: rgb(104, 104, 104);
+    word-spacing: 0.2ex;
+    font-weight: 300;
+    margin-top: 10%
+}
+.chat-container {
+    width: 40%;
+    margin: 20px auto;
+}
+.top-header {
+    background: #35ac19;
+    color: white;
+    padding: 0.2rem;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 4px solid #35ac19;
+    padding: 10px;
+}
+.top-header:hover {
+    background-color: #464646;
+}
+.top-header-tit {
+    display: inline;
+    font-size: 15px;
+  
+}
+
+.top-header > * {
+    position: relative;
+}
+
+.chat-box {
+    list-style: none;
+    background: #e5e5e5;
+    margin: 0;
+    height: 380px;
+    padding: 0 0 50px 0;
+    overflow-y: auto;
+}
+.chat-box li {
+    padding: 0.5rem;
+    overflow: hidden;
+    display: flex;
+
+}
+.chat-box .avatar  {
+    height: 40px;
+    width: 40px;
+    position: relative;
+}
+.chat-box .avatar img{
+    display: block;
+    width: 100%;
+  
+}
+.another .bot:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 5px solid white;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+.me {
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.me .messages {
+    order: 1;
+    border-bottom-right-radius: 0;
+}
+.me .user {
+    order: 2;
+}
+.me .user:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 5px solid white;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    /*box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); */
+}
+.messages {
+    background: white;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    max-width: 190px;
+}
+.messages p {
+    font-size: 0.8rem;
+    margin: 0 0 0.2rem 0;
+}
+.messages time {
+    font-size: 0.7rem;
+    color: #ccc;
+    padding: 0;
+}
+
+
+.iconicstroke-user:hover, .typicons-cog:hover, .fontawesome-facetime-video:hover {
+    color: #000000;
+}
+::-webkit-scrollbar {
+    height: 14px;
+    width: 10px;
+    background: #eee;
+    border-left: 1px solid #ddd;
+}
+::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border: 1px solid #cfcfcf;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #b2b2b2;
+    border: 1px solid #b2b2b2;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #b2b2b2;
+    border: 1px solid #b2b2b2;
+}
+@-webkit-keyframes pulse {
+    from {
+    opacity: 0;
+}
+to {
+    opacity: 0.5;
+}
+}
+
+#usrinput {
+    text-align: left;
+    width: 100%;
+    border: none;
+    padding: 15px;
+}
+
+#usrinput:focus {
+    outline: none;
+}
+
+.input {
+    display: flex;
+    height: 40px;
+    background: #ffff;
+    padding-left: 20px;
+   
+}
+
+.loading {
+    font-size: 1.5em
+}
+
+.sendButton {
+    width: 0px;
+    height: 0px;
+    border-left: 20px solid gray;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    padding-right: 10px;
+    margin: 10px;
+}
+
+.avatar img {
+    width: 40px;
+   
+    -moz-border-radius: 5em;
+	-webkit-border-radius: 5em;
+	border-radius: 5em;
+    background: #fff;
+}
+.messageImages{
+padding: 15px;
+object-fit: contain;
+}
+
+.messageImages img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Modal Styling*/
+
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  
+  /* Add Animation */
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }

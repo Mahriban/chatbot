@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <section class='chat-container'>
+        <header class='top-header'>
+            <div class='left'>
+                <span class='top-header-tit'> Chatbot made with vanilla Javascript</span>
+            </div>
+        </header>
+
+        <ol class='chat-box' id="chatBox">
+        </br>
+            <li class='another'>
+                <div class="avatar bot">
+                    <img src='images/rimage.png'>
+                </div>
+                <div class='messages'>
+                    <p>Hi. My name is Eva. I'm simple chatbot made with pure Javascript by Mahri Boeck. If you want to know what I am able to do, simply ask me: What can you do?</p>
+                    <time datetime='2009-11-13T20:00'></time>
+                </div>
+            </li>
+            <li class='me'>
+            </li>
+        </ol>
+        <div class = "input">
+            <input type="text" placeholder="Start typing..." onkeydown="if(event.keyCode == 13) {usermessage()}" maxlength="150" id="usrinput">
+          <div class="sendButton" onclick="usermessage()">  </div>      
+        </div>
+    </section>
+<script src="chat.js"> </script>
+</body>
+</html>
